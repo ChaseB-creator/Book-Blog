@@ -1,7 +1,7 @@
 :root {
-  --gold: #ddb375e9;
-  --red: #d66000;
-  --dark: #4a2a00ac;
+  --gold: #b8860b;
+  --red: #b22222;
+  --dark: #2c1d00;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 h1, h2 {
   font-family: 'Lora', serif;
@@ -98,10 +99,48 @@ img {
   height: auto;
 }
 
-
 footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--gold);
   margin-top: 2rem;
+}
+
+/* Increase font size for the date */
+.details .date {
+  font-size: 1.2rem;
+}
+
+/* Reduce line spacing in details */
+.details p {
+  margin: 0.3rem 0;
+}
+
+/* Add right border and spacing */
+.details {
+  border-right: 2px solid var(--gold);
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+/* Align the title with the date */
+.content h2 {
+  margin-top: 0;
+}
+
+/* Center the book cover image */
+.content img {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Add spacing between articles */
+.articles article {
+  margin-bottom: 2rem;
+}
+
+/* Match main max-width to header/nav */
+main {
+  max-width: 600px;
+  margin: auto;
 }
